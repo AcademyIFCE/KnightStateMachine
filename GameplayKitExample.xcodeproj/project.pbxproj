@@ -19,7 +19,6 @@
 		060F630025F2716A00576C2E /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F62FF25F2716A00576C2E /* Knight.swift */; };
 		060F630325F2718900576C2E /* AnimatedSpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F630225F2718900576C2E /* AnimatedSpriteComponent.swift */; };
 		060F63AC25F2849300576C2E /* WalkSprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 060F63A525F2849300576C2E /* WalkSprites.atlas */; };
-		060F63AD25F2849300576C2E /* AttackSprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 060F63A625F2849300576C2E /* AttackSprites.atlas */; };
 		060F63AE25F2849300576C2E /* DeadSprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 060F63A725F2849300576C2E /* DeadSprites.atlas */; };
 		060F63AF25F2849300576C2E /* IdleSprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 060F63A825F2849300576C2E /* IdleSprites.atlas */; };
 		060F63B025F2849300576C2E /* JumpAttackSprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 060F63A925F2849300576C2E /* JumpAttackSprites.atlas */; };
@@ -33,6 +32,7 @@
 		060F63DF25F440A800576C2E /* WalkComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F63DE25F440A800576C2E /* WalkComponent.swift */; };
 		060F63ED25F6657400576C2E /* JumpComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F63EC25F6657400576C2E /* JumpComponent.swift */; };
 		060F63F025F6657A00576C2E /* JumpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F63EF25F6657A00576C2E /* JumpState.swift */; };
+		060F640625F7FD3C00576C2E /* AttackSprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 060F640525F7FD3C00576C2E /* AttackSprites.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +50,6 @@
 		060F62FF25F2716A00576C2E /* Knight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
 		060F630225F2718900576C2E /* AnimatedSpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSpriteComponent.swift; sourceTree = "<group>"; };
 		060F63A525F2849300576C2E /* WalkSprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = WalkSprites.atlas; sourceTree = "<group>"; };
-		060F63A625F2849300576C2E /* AttackSprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = AttackSprites.atlas; sourceTree = "<group>"; };
 		060F63A725F2849300576C2E /* DeadSprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = DeadSprites.atlas; sourceTree = "<group>"; };
 		060F63A825F2849300576C2E /* IdleSprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = IdleSprites.atlas; sourceTree = "<group>"; };
 		060F63A925F2849300576C2E /* JumpAttackSprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = JumpAttackSprites.atlas; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		060F63DE25F440A800576C2E /* WalkComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkComponent.swift; sourceTree = "<group>"; };
 		060F63EC25F6657400576C2E /* JumpComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JumpComponent.swift; sourceTree = "<group>"; };
 		060F63EF25F6657A00576C2E /* JumpState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JumpState.swift; sourceTree = "<group>"; };
+		060F640525F7FD3C00576C2E /* AttackSprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = AttackSprites.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +123,7 @@
 		060F639925F27F6300576C2E /* KnightSpriteAtlas */ = {
 			isa = PBXGroup;
 			children = (
-				060F63A625F2849300576C2E /* AttackSprites.atlas */,
+				060F640525F7FD3C00576C2E /* AttackSprites.atlas */,
 				060F63A725F2849300576C2E /* DeadSprites.atlas */,
 				060F63A825F2849300576C2E /* IdleSprites.atlas */,
 				060F63A925F2849300576C2E /* JumpAttackSprites.atlas */,
@@ -261,8 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				060F63AE25F2849300576C2E /* DeadSprites.atlas in Resources */,
+				060F640625F7FD3C00576C2E /* AttackSprites.atlas in Resources */,
 				060F63B225F2849300576C2E /* RunSprites.atlas in Resources */,
-				060F63AD25F2849300576C2E /* AttackSprites.atlas in Resources */,
 				060F63B125F2849300576C2E /* JumpSprites.atlas in Resources */,
 				060F63AF25F2849300576C2E /* IdleSprites.atlas in Resources */,
 				060F63AC25F2849300576C2E /* WalkSprites.atlas in Resources */,

@@ -11,25 +11,28 @@ import GameplayKit
 
 class GameScene: SKScene {
 
+    // MARK: - Entities
     let knight = Knight()
     let ground = Ground(numberOfTiles: 15)
 
+    //Quick Access to Knight's PlayerControlComponent
     var playerControlComponent: PlayerControlComponent? {
         knight.component(ofType: PlayerControlComponent.self)
     }
 
+    // MARK: - Camera and SKScene related properties
     lazy var sceneCamera: SKCameraNode = {
         let camera = SKCameraNode()
-        camera.setScale(3500)
+        camera.setScale(2)
         return camera
     }()
 
     private var previousUpdateTime: TimeInterval = TimeInterval()
 
+    // MARK: - Gestures
     lazy var tapGesture = UITapGestureRecognizer(target: self, action: #selector(attack))
     lazy var panGesture = UIPanGestureRecognizer(target: self, action: #selector(walk))
 
-    // MARK: - Gesture Actions
     @objc func attack(_ sender: UITapGestureRecognizer) {
         playerControlComponent?.attack()
     }

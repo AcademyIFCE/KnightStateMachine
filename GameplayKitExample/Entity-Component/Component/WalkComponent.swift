@@ -11,9 +11,19 @@ import GameplayKit
 class WalkComponent: GKComponent {
 
     var direction: PanDirection = .none
+    var velocity: CGFloat
 
     var spriteNode: SKSpriteNode? {
         self.entity?.component(ofType: AnimatedSpriteComponent.self)?.spriteNode
+    }
+
+    init(velocity: CGFloat = 10) {
+        self.velocity = velocity
+        super.init()
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
     func walk(direction: PanDirection) {
@@ -30,11 +40,11 @@ class WalkComponent: GKComponent {
         switch direction {
         case .left:
             spriteNode?.xScale = -1
-            spriteNode?.position.x -= 10
+            spriteNode?.position.x -= velocity
 
         case .right:
             spriteNode?.xScale = 1
-            spriteNode?.position.x += 10
+            spriteNode?.position.x += velocity
             
         default:
             break

@@ -31,9 +31,9 @@ class JumpState: GKState {
         print("JumpState")
 
         animatedSpriteComponent?.setAnimation(atlasName: "JumpSprites")
-        jumpComponent?.jump() {
+        jumpComponent?.jump(completion: {
             self.stateMachine?.enter(IdleState.self)
-        }
+        })
     }
 
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {

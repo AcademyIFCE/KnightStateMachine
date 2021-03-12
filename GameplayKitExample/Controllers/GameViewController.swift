@@ -10,7 +10,7 @@ import SpriteKit
 
 class GameViewController: UIViewController {
 
-    let skView: SKView = SKView(frame: UIScreen.main.bounds)
+    let skView: SKView = SKView()
 
     override func loadView() {
         super.loadView()
@@ -20,7 +20,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let scene: SKScene = GameScene()
+        let scene: SKScene = GameScene(size: UIScreen.main.bounds.size)
         scene.scaleMode = .aspectFill
         self.skView.presentScene(scene)
     }

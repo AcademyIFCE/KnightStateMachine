@@ -10,9 +10,8 @@ import SpriteKit
 import GameplayKit
 
 class IdleState: GKState {
-    var entity: GKEntity
 
-    private var timeRemaining: TimeInterval = 10
+    var entity: GKEntity
 
     var animatedSpriteComponent: AnimatedSpriteComponent? {
         self.entity.component(ofType: AnimatedSpriteComponent.self)
@@ -30,7 +29,6 @@ class IdleState: GKState {
     override func didEnter(from previousState: GKState?) {
         super.didEnter(from: previousState)
         print("IdleState")
-        self.timeRemaining = 10
 
         animatedSpriteComponent?.setAnimation(atlasName: "IdleSprites")
         walkComponent?.halt()
